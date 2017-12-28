@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <h2> Cadastro </h2>
+    <form [formGroup] = "cadastro" (ngSubmit) = "postDados()">
+
+    <ion-item>
+      <ion-label floating>Código Curso Moodle</ion-label>
+      <ion-input type="number" name = "codigo" formControlName= "codigo"  ></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Nome Curso</ion-label>
+      <ion-input type="text" name = "nomecurso" formControlName= "nomecurso" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Qtde dias vencimento</ion-label>
+      <ion-input type="number" name = "qtdediasvencimento" formControlName= "qtdediasvencimento" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Valor </ion-label>
+      <ion-input type="text" name = "valor" formControlName= "valor"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Descrição </ion-label>
+      <ion-input type="text" name = "descricao" formControlName= "descricao"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Max. parcelamento </ion-label>
+      <ion-input type="number" name = "qtdediasvencimento" formControlName= "qtdediasvencimento"></ion-input>
+    </ion-item>
+
+  
+  
+
+  
+  <button ion-button full block color = "danger">Salvar</button>
+
+
+</form>
+
